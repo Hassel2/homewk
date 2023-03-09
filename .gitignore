@@ -1,0 +1,13 @@
+.ccls-cache/
+*.zip
+*.txt
+*.png
+chm/
+db/
+dm/
+eng/
+os/
+tpr/
+saodcpp/
+backup/
+*tree/
