@@ -1,7 +1,9 @@
 import Text.Printf
 
 mysqrt :: Float -> Float
-mysqrt x = f x 1
+mysqrt x  
+    | x < 0 = errorBadArgument
+    | otherwise = f x 1
     where
         f x a 
             | abs(a - a1) <= 0.000001 = a1
@@ -18,3 +20,4 @@ main = do
     printf "  => %.13f\n" (mysqrt 4)
     printf "(mysqrt 169)\n"
     printf "  => %.13f\n" (mysqrt 169)
+    printf "  => %.13f\n" (mysqrt (-3))
