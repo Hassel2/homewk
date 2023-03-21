@@ -1,7 +1,7 @@
 import Text.Printf
 
 makePolarPair :: Float -> Float -> (Float, Float)
-makePolarPair rad alph= (rad, alph)
+makePolarPair rad alph = (rad, alph)
 
 getPolarPairRadius :: (Float, Float) -> Float
 getPolarPairRadius = fst

@@ -5,8 +5,8 @@ collatz x = col x (a ++ [x])
     where 
         a = []
         col :: Int -> [Int] -> [Int]
+        col 1 a = a
         col x a
-            | x == 1 = a
             | even x = col (x `div` 2) (a ++ [x `div` 2])
             | odd x = col (x*3+1) (a ++ [x*3+1])
 
